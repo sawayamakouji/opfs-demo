@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OPFS Demo</title>
+</head>
+<body>
+    <h1>OPFS Demo</h1>
+    <button id="createFile">Create File</button>
+    <button id="writeFile">Write to File</button>
+    <button id="readFile">Read File</button>
+    <button id="deleteFile">Delete File</button>
+    <hr>
+    <input type="number" id="fileSize" value="10"> MB
+    <button id="writeLargeFile">Write Large File</button>
+    <button id="readLargeFile">Read Large File</button>
+
+    <h2>File Content Preview</h2>
+    <div id="fileContentDisplay" style="border: 1px solid black; min-height: 100px; padding: 10px; white-space: pre-wrap;"></div>
+
+    <h2>Generic File Operations</h2>
+    <input type="text" id="genericFileName" placeholder="Enter file name (e.g., my_file.txt)" size="40">
+    <button id="loadGenericFile">Load File</button>
+    <button id="createGenericFile">Create New File</button>
+    <button id="deleteGenericFile">Delete File</button>
+    <br><br>
+    <textarea id="genericFileContent" rows="10" cols="80"></textarea>
+    <br>
+    <button id="saveGenericFile">Save File</button>
+
+    <h2>Master Data Generation</h2>
+    <input type="number" id="masterDataRows" value="200000"> rows
+    <button id="generateMasterData">Generate & Write Master Data</button>
+
+    <h2>Search Product</h2>
+    <input type="text" id="productCodeSearch" placeholder="Enter Product Code (e.g., P00000001)" size="40">
+    <button id="searchProductButton">Search</button>
+    <p>Result: <span id="searchResult"></span></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
